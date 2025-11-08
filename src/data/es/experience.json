@@ -1,0 +1,31 @@
+{
+  "title": "EXPERIENCIA LABORAL",
+  "data": [
+    {
+      "id": 1,
+      "title": "DESARROLLADOR DE SOFTWARE",
+      "company": "CTSI, Canarias Tecnológica y Sistemas de Información",
+      "site": "https://ctsi.es/",
+      "favicon": "https://www.google.com/s2/favicons?domain=ctsi.es&sz=32",
+      "period": "Agosto 2024 - Junio 2025",
+      "points": [
+        "Desarrollé scripts de automatización para la extracción y el procesamiento de datos, reduciendo errores manuales y mejorando la eficiencia de los flujos de trabajo.",
+        "Desarrollé una aplicación web full-stack para la gestión y visualización de datos, construyendo una API RESTful con Python (FastAPI) (documentada con Swagger) y un frontend en React.js para crear una interfaz intuitiva y responsive. Desplegué la solución en contenedores Docker.",
+        "Colaboré en la creación de una aplicación móvil con React Native (TypeScript) y Expo, integrando servicios de inteligencia artificial mediante la API de OpenAI."
+      ]
+    },
+    {
+      "id": 2,
+      "title": "DESARROLLADOR FRONTEND",
+      "company": "Keytrends (Prácticas de empresa)",
+      "site": "https://keytrends.ai/es/",
+      "favicon": "https://www.google.com/s2/favicons?domain=keytrends.ai&sz=32",
+      "period": "Marzo 2024 - Junio 2024",
+      "points": [
+        "Desarrollé componentes en React con Tailwind CSS para crear interfaces modernas y adaptables.",
+        "Implementé nuevas funcionalidades mediante la integración de datos y lógica en componentes.",
+        "Participé en el mantenimiento y mejora continua del código para asegurar su calidad y eficiencia."
+      ]
+    }
+  ]
+}

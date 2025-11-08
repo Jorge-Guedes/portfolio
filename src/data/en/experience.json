@@ -1,0 +1,31 @@
+{
+  "title": "WORK EXPERIENCE",
+  "data": [
+    {
+      "id": 1,
+      "title": "SOFTWARE DEVELOPER",
+      "company": "CTSI, Canarias Tecnológica y Sistemas de Información",
+      "site": "https://ctsi.es/",
+      "favicon": "https://www.google.com/s2/favicons?domain=ctsi.es&sz=32",
+      "period": "August 2024 - June 2025",
+      "points": [
+        "Developed automation scripts for data extraction and processing, reducing manual errors and improving workflow efficiency.",
+        "Developed a full-stack web application for data management and visualization, building a RESTful API with Python (FastAPI) (documented with Swagger) and a React.js frontend to create an intuitive and responsive interface. Deployed the solution in Docker containers.",
+        "Collaborated on creating a mobile application with React Native (TypeScript) and Expo, integrating artificial intelligence services through the OpenAI API."
+      ]
+    },
+    {
+      "id": 2,
+      "title": "FRONTEND DEVELOPER",
+      "company": "Keytrends (Company Internship)",
+      "site": "https://keytrends.ai/es/",
+      "favicon": "https://www.google.com/s2/favicons?domain=keytrends.ai&sz=32",
+      "period": "March 2024 - June 2024",
+      "points": [
+        "Developed React components with Tailwind CSS to create modern and adaptable interfaces.",
+        "Implemented new functionalities by integrating data and logic into components.",
+        "Participated in the maintenance and continuous improvement of code to ensure its quality and efficiency."
+      ]
+    }
+  ]
+}
