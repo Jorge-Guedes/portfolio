@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export const Sidebar = () => {
   return (
-    <div className="lg:bg-gray-800 flex flex-col justify-center items-center w-full lg:w-1/3 min-h-screen lg:h-screen lg:fixed left-0 top-0 z-10 p-4 lg:p-8 border-r border-gray-700">
+    <div className="flex flex-col justify-center items-center w-full lg:w-1/3 min-h-screen lg:h-screen lg:fixed left-0 top-0 z-10 p-4 lg:p-8">
       <motion.div
         className="w-48 h-48 lg:w-56 lg:h-56 bg-gray-700 flex flex-col items-center justify-center text-gray-200 font-bold rounded-lg text-center p-4 lg:p-6 shadow-xl border border-gray-600"
         initial={{ opacity: 0, y: -50 }}

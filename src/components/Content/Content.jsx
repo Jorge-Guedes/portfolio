@@ -3,7 +3,7 @@ import { Experience } from "./Experience";
 
 export const Content = () => {
   return (
-    <div className="w-full lg:w-2/3 lg:ml-auto bg-gradient-to-b from-gray-800 via-gray-900 to-gray-800">
+    <div className="w-full lg:w-2/3 lg:ml-auto">
       <Experience />
 
       <section className="min-h-screen flex items-center justify-center p-4 lg:p-8">
