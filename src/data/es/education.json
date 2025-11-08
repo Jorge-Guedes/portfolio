@@ -1,0 +1,29 @@
+{
+  "title": "FORMACIÓN",
+  "data": [
+    {
+      "id": 1,
+      "title": "TÉCNICO SUPERIOR EN DESARROLLO DE APLICACIONES WEB",
+      "institution": "IES EL RINCÓN",
+      "site": "https://ieselrincon.es/",
+      "favicon": "https://www.google.com/s2/favicons?domain=ieselrincon.es&sz=32",
+      "period": "2024 - Actualmente"
+    },
+    {
+      "id": 2,
+      "title": "TÉCNICO SUPERIOR EN DESARROLLO DE APLICACIONES MULTIPLATAFORMA",
+      "institution": "IES EL RINCÓN",
+      "site": "https://ieselrincon.es/",
+      "favicon": "https://www.google.com/s2/favicons?domain=ieselrincon.es&sz=32",
+      "period": "2021 - 2024"
+    },
+    {
+      "id": 3,
+      "title": "TÉCNICO EN INSTALACIONES DE TELECOMUNICACIONES",
+      "institution": "COLEGIO SAN IGNACIO DE LOYOLA",
+      "site": "https://fundacionloyola.com/sanignacio/",
+      "favicon": "https://fundacionloyola.com/sanignacio/wp-content/uploads/2020/02/Logo-Colegio-San-Ignacio-de-Loyola.jpg",
+      "period": "2013 - 2015"
+    }
+  ]
+}

@@ -1,24 +1,12 @@
 import { motion } from "framer-motion";
 import { Experience } from "./Experience";
+import { Education } from "./Education";
 
 export const Content = () => {
   return (
     <div className="w-full lg:w-2/3 lg:ml-auto">
       <Experience />
-
-      <section className="min-h-screen flex items-center justify-center p-4 lg:p-8">
-        <motion.div
-          className="w-full max-w-2xl h-64 bg-gray-600 flex flex-col items-center justify-center text-gray-200 font-bold rounded-2xl text-center p-6 shadow-2xl border border-gray-500"
-          initial={{ opacity: 0, x: 100 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ margin: "-50px" }}
-          transition={{ duration: 0.8, type: "spring" }}
-        >
-          <span className="text-2xl lg:text-3xl mb-4 text-white">
-            EDUCACIÓN
-          </span>
-        </motion.div>
-      </section>
+      <Education />
 
       <section className="min-h-screen flex items-center justify-center p-4 lg:p-8">
         <motion.div
