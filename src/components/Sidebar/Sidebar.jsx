@@ -1,16 +1,20 @@
 import { motion } from "framer-motion";
+import profileImage from "../../assets/images/profile-image.jpg";
 
 export const Sidebar = () => {
   return (
     <div className="flex flex-col justify-center items-center w-full lg:w-1/3 min-h-screen lg:h-screen lg:fixed left-0 top-0 z-10 p-4 lg:p-8">
       <motion.div
-        className="w-48 h-48 lg:w-56 lg:h-56 bg-gray-700 flex flex-col items-center justify-center text-gray-200 font-bold rounded-lg text-center p-4 lg:p-6 shadow-xl border border-gray-600"
+        className="w-48 h-48 lg:w-56 lg:h-56 rounded-full shadow-xl border border-gray-600 overflow-hidden"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <span className="text-lg lg:text-xl">foto y datos</span>
-        <span className="text-lg lg:text-xl">personales</span>
+        <img
+          src={profileImage}
+          alt="Foto de perfil"
+          className="w-full h-full object-cover"
+        />
       </motion.div>
 
       <motion.div
@@ -20,7 +24,7 @@ export const Sidebar = () => {
         transition={{ delay: 0.3, duration: 0.6 }}
       >
         <h2 className="text-xl lg:text-2xl font-bold mb-2 text-white">
-          Nombre
+          Jorge Guedes Peña
         </h2>
         <p className="text-sm lg:text-base text-gray-400">
           Desarrollador Frontend
