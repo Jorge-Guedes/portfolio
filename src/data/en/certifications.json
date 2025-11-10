@@ -1,0 +1,21 @@
+{
+  "title": "CERTIFICATIONS",
+  "data": [
+    {
+      "id": 1,
+      "title": "WEB TECHNOLOGY APPLICATION DEVELOPMENT",
+      "institution": "CENTRO DE ESTUDIOS KUMA",
+      "site": "https://ckuma.com/",
+      "favicon": "https://www.google.com/s2/favicons?domain=ckuma.com&sz=32",
+      "period": "June 2021 - November 2021"
+    },
+    {
+      "id": 2,
+      "title": "JAVA COURSE",
+      "institution": "UNIVERSIDAD ANTONIO DE NEBRIJA",
+      "site": "https://www.nebrija.com/",
+      "favicon": "https://www.google.com/s2/favicons?domain=nebrija.com&sz=32",
+      "period": "February 2021 - May 2021"
+    }
+  ]
+}

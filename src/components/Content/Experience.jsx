@@ -12,7 +12,7 @@ export const Experience = () => {
         transition={{ duration: 0.8, type: "spring" }}
       >
         <h2 className="text-2xl lg:text-3xl font-bold text-white text-center mb-8">
-          {experienceES.section}
+          {experienceES.title}
         </h2>
 
         {experienceES.data.map((job) => (
@@ -29,7 +29,7 @@ export const Experience = () => {
                     href={job.site}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xl font-bold text-white hover:text-amber-500 transition-colors"
+                    className="text-xl font-bold text-white hover:text-green-500 transition-colors duration-150"
                   >
                     {job.title}
                   </a>
@@ -38,7 +38,7 @@ export const Experience = () => {
               </div>
 
               {job.period && (
-                <span className="text-amber-500/60 font-semibold mt-2 lg:mt-0">
+                <span className="text-green-500/60 font-semibold mt-2 lg:mt-0">
                   {job.period}
                 </span>
               )}
@@ -54,7 +54,7 @@ export const Experience = () => {
                   viewport={{ margin: "0px", once: true }}
                   transition={{ duration: 1.0, type: "spring" }}
                 >
-                  <span className="text-amber-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   {point}
                 </motion.li>
               ))}

@@ -16,51 +16,52 @@ export const Education = () => {
         </h2>
 
         <div className="space-y-6">
-          {educationES.data.map((edu, index) => (
+          {educationES.data.map((educ, index) => (
             <motion.a
-              key={edu.id}
-              href={edu.site}
+              key={educ.id}
+              href={educ.site}
               target="_blank"
               rel="noopener noreferrer"
-              className="block bg-gray-800/30 p-6 rounded-xl border border-gray-600/30 hover:border-amber-500/50 transition-all duration-300 cursor-pointer"
+              className="block bg-gray-800/40 p-6 rounded-xl border border-gray-600/40 hover:border-green-500/50 transition-all duration-20 cursor-pointer"
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{
-                duration: 0.6,
-                delay: index * 0.2,
+                duration: 0.1,
                 type: "spring",
                 stiffness: 100,
               }}
               whileHover={{
                 scale: 1.02,
-                boxShadow: "0 10px 30px -15px rgba(245, 158, 11, 0.3)",
+                boxShadow: "0 10px 30px -15px rgba(34, 197, 94, 0.3)",
               }}
             >
               <div className="flex items-start gap-4">
                 <motion.img
-                  src={edu.favicon}
-                  alt={`${edu.institution} logo`}
+                  whileHover={{ rotate: 10 }}
+                  src={educ.favicon}
+                  alt={`${educ.institution} logo`}
                   className="w-10 h-10 rounded-lg mt-1"
                 />
 
                 <div className="flex-1">
                   <motion.h3
                     className="text-xl font-bold text-white mb-2"
-                    whileHover={{ color: "#f59e0b" }}
-                    transition={{ duration: 0.2 }}
+                    whileHover={{ color: "#22c55e" }}
+                    transition={{ duration: 0.1 }}
                   >
-                    {edu.title}
+                    {educ.title}
                   </motion.h3>
 
                   <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center">
-                    <p className="text-gray-300 text-lg">{edu.institution}</p>
+                    <p className="text-gray-300 text-lg">{educ.institution}</p>
 
                     <motion.span
-                      className="text-amber-500/60 font-semibold mt-2 lg:mt-0 inline-block"
+                      className="text-green-500/60 font-semibold mt-2 lg:mt-0 inline-block"
                       whileHover={{ scale: 1.1 }}
+                      transition={{ duration: 0.1 }}
                     >
-                      {edu.period}
+                      {educ.period}
                     </motion.span>
                   </div>
                 </div>
