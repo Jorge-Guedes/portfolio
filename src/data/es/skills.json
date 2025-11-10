@@ -1,0 +1,35 @@
+{
+  "title": "HABILIDADES TÉCNICAS",
+  "categories": [
+    {
+      "name": "Frontend",
+      "skills": [
+        { "name": "React", "percentage": 70 },
+        { "name": "Vue", "percentage": 70 },
+        { "name": "React Native", "percentage": 70 },
+        { "name": "JavaScript", "percentage": 75 },
+        { "name": "TypeScript", "percentage": 65 },
+        { "name": "Tailwind CSS", "percentage": 80 },
+        { "name": "HTML5", "percentage": 85 },
+        { "name": "CSS3", "percentage": 75 }
+      ]
+    },
+    {
+      "name": "Backend",
+      "skills": [
+        { "name": "Python", "percentage": 80 },
+        { "name": "FastAPI", "percentage": 70 },
+        { "name": "Node.js", "percentage": 80 },
+        { "name": "Express", "percentage": 65 },
+        { "name": "PostgreSQL", "percentage": 65 }
+      ]
+    },
+    {
+      "name": "Tools",
+      "skills": [
+        { "name": "Git", "percentage": 75 },
+        { "name": "Docker", "percentage": 65 }
+      ]
+    }
+  ]
+}
