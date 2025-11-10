@@ -38,10 +38,9 @@ export const Education = () => {
             >
               <div className="flex items-start gap-4">
                 <motion.img
-                  whileHover={{ rotate: 10 }}
                   src={educ.favicon}
                   alt={`${educ.institution} logo`}
-                  className="w-10 h-10 rounded-lg mt-1"
+                  className="w-10 h-10 rounded-lg mt-1 bg-gray-200"
                 />
 
                 <div className="flex-1">
