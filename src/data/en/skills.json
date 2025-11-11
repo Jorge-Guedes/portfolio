@@ -21,6 +21,7 @@
         { "name": "FastAPI", "percentage": 70 },
         { "name": "Node.js", "percentage": 80 },
         { "name": "Express", "percentage": 65 },
+        { "name": "Java", "percentage": 55 },
         { "name": "PostgreSQL", "percentage": 65 }
       ]
     },

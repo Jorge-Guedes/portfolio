@@ -19,6 +19,7 @@ import {
   SiDocker,
 } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
+import { FaJava } from "react-icons/fa";
 
 const skillIcons = {
   React: SiReact,
@@ -33,6 +34,7 @@ const skillIcons = {
   FastAPI: SiFastapi,
   "Node.js": SiNodedotjs,
   Express: SiExpress,
+  Java: FaJava,
   PostgreSQL: SiPostgresql,
   Git: SiGit,
   Docker: SiDocker,
@@ -51,6 +53,7 @@ const skillColors = {
   FastAPI: "#009688",
   "Node.js": "#339933",
   Express: "#000000",
+  Java: "#ED8B00",
   PostgreSQL: "#336791",
   Git: "#F05032",
   Docker: "#2496ED",
