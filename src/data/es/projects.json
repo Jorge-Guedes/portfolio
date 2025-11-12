@@ -1,0 +1,30 @@
+{
+  "title": "PROYECTOS",
+  "data": [
+    {
+      "id": 1,
+      "title": "Nuncius",
+      "github": "https://github.com/Jorge-Guedes/nuncius",
+      "favicon": "https://raw.githubusercontent.com/Jorge-Guedes/nuncius/main/public/nuncius-icon.png",
+      "logo_sizes": "w-16 h-16",
+      "description": "Cliente API para testing de peticiones HTTP. Soporta métodos esenciales, editor JSON con sintaxis destacada y sincronización bidireccional de parámetros.",
+      "technologies": ["Vue", "Tailwind", "TypeScript", "Electron"]
+    },
+    {
+      "id": 2,
+      "title": "InfoBeer",
+      "github": "https://github.com/Jorge-Guedes/infobeer-app",
+      "favicon": "https://raw.githubusercontent.com/Jorge-Guedes/infobeer-app/main/frontend/public/infobeer-logo.png",
+      "logo_sizes": "w-18 h-16",
+      "description": "Aplicación full stack de catálogo cervecero. Explora cervezas organizadas por categorías con sus características detalladas.",
+      "technologies": [
+        "React",
+        "Tailwind",
+        "TypeScript",
+        "Express",
+        "PostgreSQL",
+        "Docker"
+      ]
+    }
+  ]
+}

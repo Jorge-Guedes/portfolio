@@ -1,7 +1,8 @@
 import { Experience } from "./Experience";
 import { Education } from "./Education";
-import { Certifications } from "./Certification";
+import { Certifications } from "./Certifications";
 import { Skills } from "./Skills";
+import { Projects } from "./Projects";
 
 export const Content = () => {
   return (
@@ -10,6 +11,7 @@ export const Content = () => {
       <Education />
       <Certifications />
       <Skills />
+      <Projects />
 
       {/* <section className="min-h-screen flex items-center justify-center p-4 lg:p-8">
         <motion.div
