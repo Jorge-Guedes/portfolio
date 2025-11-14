@@ -37,11 +37,7 @@ export const Projects = () => {
                   highlight={true}
                   activeOffset={50}
                 >
-                  {/* Agregar flex flex-col aquí */}
-                  <div className="relative bg-gray-800/40 p-6 rounded-2xl border border-gray-600/40 hover:border-green-500/50 transition-all duration-300 group overflow-hidden h-full flex flex-col">
-                    <div className="absolute inset-0 bg-gradient-to-br from-green-500/5 to-emerald-500/5 rounded-2xl" />
-                    <div className="absolute inset-0 bg-gradient-to-r from-green-500/10 via-transparent to-emerald-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
+                  <div className="relative bg-gray-800/40 p-6 rounded-2xl border border-gray-600/40 group overflow-hidden h-full flex flex-col">
                     <div className="relative z-10 flex flex-col flex-1">
                       <div className="flex items-center gap-2 mb-4">
                         <div>
@@ -53,7 +49,7 @@ export const Projects = () => {
                         </div>
 
                         <div>
-                          <h3 className="text-xl font-bold text-white group-hover:text-green-400 transition-colors duration-300 line-clamp-2">
+                          <h3 className="text-xl font-bold text-white line-clamp-2">
                             {project.title}
                           </h3>
                         </div>
@@ -96,7 +92,6 @@ export const Projects = () => {
                       )}
                     </div>
 
-                    {/* Quitar el bg-green-400 y esto estará abajo */}
                     <div className="mt-auto pt-4 border-t border-gray-600/40">
                       <div className="flex items-center justify-center text-gray-300 gap-2 text-xs font-medium">
                         <span>{projectsES.labels.wiew_on_github_text}</span>
