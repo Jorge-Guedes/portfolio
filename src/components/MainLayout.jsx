@@ -1,5 +1,6 @@
 import { Content } from "./Content/Content";
 import { Sidebar } from "./Sidebar/Sidebar";
+import { Navigation } from "./Navigation/Navigation";
 
 export const MainLayout = () => {
   return (
@@ -14,6 +15,8 @@ export const MainLayout = () => {
         backgroundAttachment: "fixed",
       }}
     >
+      <Navigation />
+
       <div className="flex flex-col lg:flex-row min-h-screen w-full mx-auto">
         <Sidebar />
         <Content />

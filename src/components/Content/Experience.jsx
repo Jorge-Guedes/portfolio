@@ -3,7 +3,10 @@ import experienceES from "../../data/es/experience.json";
 
 export const Experience = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center p-4 lg:p-8">
+    <div
+      id="experience"
+      className="min-h-screen flex items-center justify-center p-4 lg:p-8"
+    >
       <motion.div
         className="w-full max-w-4xl p-6 lg:p-8"
         initial={{ opacity: 0, y: 100 }}
