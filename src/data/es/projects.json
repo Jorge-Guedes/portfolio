@@ -1,5 +1,11 @@
 {
   "title": "PROYECTOS",
+  "labels": {
+    "description": "Descripción",
+    "objective": "Objetivo",
+    "technologies": "Tecnologías",
+    "wiew_on_github_text": "Ver proyecto en GitHub"
+  },
   "data": [
     {
       "id": 1,
@@ -8,6 +14,7 @@
       "favicon": "https://raw.githubusercontent.com/Jorge-Guedes/nuncius/main/public/nuncius-icon.png",
       "logo_sizes": "w-16 h-16",
       "description": "Cliente API para testing de peticiones HTTP. Soporta métodos esenciales, editor JSON con sintaxis destacada y sincronización bidireccional de parámetros.",
+      "objetive": "Crear un cliente API minimalista que priorice la experiencia directa del usuario, eliminando barreras innecesarias como el login, mientras profundizo en la arquitectura interna de este tipo de herramientas.",
       "technologies": ["Vue", "Tailwind", "TypeScript", "Electron"]
     },
     {
@@ -17,6 +24,7 @@
       "favicon": "https://raw.githubusercontent.com/Jorge-Guedes/infobeer-app/main/frontend/public/infobeer-logo.png",
       "logo_sizes": "w-18 h-16",
       "description": "Aplicación full stack de catálogo cervecero. Explora cervezas organizadas por categorías con sus características detalladas.",
+      "objetive": "Implementar una solución full stack dockerizada que cubra todo el ciclo de desarrollo (frontend, backend, BBDD), creando un catálogo cervecero completo mientras profundizo en el uso de contenedores.",
       "technologies": [
         "React",
         "Tailwind",

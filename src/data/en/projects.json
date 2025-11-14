@@ -1,5 +1,11 @@
 {
   "title": "PROJECTS",
+  "labels": {
+    "description": "Description",
+    "objective": "Objective",
+    "technologies": "Technologies",
+    "wiew_on_github_text": "View project on GitHub"
+  },
   "data": [
     {
       "id": 1,
@@ -7,7 +13,8 @@
       "github": "https://github.com/Jorge-Guedes/nuncius",
       "favicon": "https://raw.githubusercontent.com/Jorge-Guedes/nuncius/main/public/nuncius-icon.png",
       "logo_sizes": "w-16 h-16",
-      "description": "API client for HTTP request testing. Supports essential methods, JSON editor with syntax highlighting, and bidirectional parameter synchronization.",
+      "description": "API client for HTTP request testing. Supports essential methods, JSON editor with syntax highlighting and bidirectional parameter synchronization.",
+      "objetive": "Create a minimalist API client that prioritizes direct user experience, eliminating unnecessary barriers like login, while I delve into the internal architecture of this type of tools.",
       "technologies": ["Vue", "Tailwind", "TypeScript", "Electron"]
     },
     {
@@ -16,7 +23,8 @@
       "github": "https://github.com/Jorge-Guedes/infobeer-app",
       "favicon": "https://raw.githubusercontent.com/Jorge-Guedes/infobeer-app/main/frontend/public/infobeer-logo.png",
       "logo_sizes": "w-18 h-16",
-      "description": "Full-stack beer catalog application. Explore beers organized by categories with their detailed characteristics.",
+      "description": "Full stack beer catalog application. Explore beers organized by categories with their detailed characteristics.",
+      "objetive": "Implement a dockerized full stack solution that covers the entire development cycle (frontend, backend, database), creating a complete beer catalog while I deepen my knowledge of container usage.",
       "technologies": [
         "React",
         "Tailwind",

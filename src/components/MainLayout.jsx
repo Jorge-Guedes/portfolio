@@ -4,7 +4,7 @@ import { Sidebar } from "./Sidebar/Sidebar";
 export const MainLayout = () => {
   return (
     <div
-      className="min-h-screen w-full"
+      className="min-h-screen w-full bg-pink-300"
       style={{
         background: `
           linear-gradient(135deg, #374151 0%, #111827 50%, #1f2937 100%),
@@ -14,7 +14,7 @@ export const MainLayout = () => {
         backgroundAttachment: "fixed",
       }}
     >
-      <div className="flex flex-col lg:flex-row min-h-screen w-full max-w-7xl mx-auto">
+      <div className="flex flex-col lg:flex-row min-h-screen w-full mx-auto">
         <Sidebar />
         <Content />
       </div>
