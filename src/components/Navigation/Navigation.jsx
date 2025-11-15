@@ -115,12 +115,12 @@ export const Navigation = () => {
 
       {isOpen && (
         <motion.div
-          className="lg:hidden fixed inset-0 z-40 bg-gray-900/95 backdrop-blur-sm"
+          className="lg:hidden fixed inset-0 z-40 bg-gray-900/95 backdrop-blur-sm overflow-y-auto"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
         >
-          <div className="flex flex-col items-start justify-center min-h-screen space-y-8 pl-8">
+          <div className="flex flex-col items-start justify-start min-h-screen py-20 space-y-8 pl-8">
             {navItems.map((item, index) => (
               <motion.button
                 key={item.id}
@@ -137,7 +137,7 @@ export const Navigation = () => {
                 {item.label}
               </motion.button>
             ))}
-            <div className="flex space-x-4 mt-8">
+            <div className="flex space-x-4 mt-8 pb-8">
               <button className="text-2xl" onClick={() => changeLanguage("es")}>
                 🇪🇸
               </button>
