@@ -55,6 +55,10 @@ export const Navigation = () => {
     setIsOpen(false);
   };
 
+  const changeLanguage = (lang) => {
+    console.log(lang);
+  };
+
   return (
     <>
       <motion.button
@@ -80,6 +84,25 @@ export const Navigation = () => {
         </div>
       </motion.button>
 
+      <motion.div className="hidden lg:flex fixed top-8 right-8 z-50">
+        <div className="bg-gray-800/40 backdrop-blur-sm rounded-2xl border border-gray-600/40 p-3">
+          <div className="flex space-x-2">
+            <button
+              className="cursor-pointer"
+              onClick={() => changeLanguage("es")}
+            >
+              🇪🇸
+            </button>
+            <button
+              className="cursor-pointer"
+              onClick={() => changeLanguage("en")}
+            >
+              🇺🇸
+            </button>
+          </div>
+        </div>
+      </motion.div>
+
       {isOpen && (
         <motion.div
           className="lg:hidden fixed inset-0 z-40 bg-gray-900/95 backdrop-blur-sm"
@@ -104,6 +127,14 @@ export const Navigation = () => {
                 {item.label}
               </motion.button>
             ))}
+            <div className="flex space-x-4 mt-8">
+              <button className="text-2xl" onClick={() => changeLanguage("es")}>
+                🇪🇸
+              </button>
+              <button className="text-2xl" onClick={() => changeLanguage("en")}>
+                🇺🇸
+              </button>
+            </div>
           </div>
         </motion.div>
       )}
