@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import skillsES from "../../data/es/skills.json";
 import {
   SiReact,
   SiVuedotjs,
@@ -20,6 +19,7 @@ import {
 } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 import { FaJava } from "react-icons/fa";
+import { useLanguageData } from "../hooks/useLanguageData";
 
 const skillIcons = {
   React: SiReact,
@@ -97,6 +97,16 @@ const SkillBar = ({ skill, index }) => {
 };
 
 export const Skills = () => {
+  const { data: skillsData, loading } = useLanguageData("skills");
+
+  if (loading || !skillsData) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        Loading...
+      </div>
+    );
+  }
+
   return (
     <div
       id="skills"
@@ -110,11 +120,11 @@ export const Skills = () => {
         transition={{ duration: 0.8, type: "spring" }}
       >
         <h2 className="text-2xl lg:text-3xl font-bold text-white text-center mb-12">
-          {skillsES.title}
+          {skillsData.title}
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {skillsES.categories.map((category, categoryIndex) => (
+          {skillsData.categories.map((category, categoryIndex) => (
             <motion.div
               key={category.name}
               className="bg-gray-800/40 p-6 rounded-xl border border-gray-600/40"

@@ -1,20 +1,26 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import { useLanguage } from "../../contexts/LanguageContext";
+import { useLanguageData } from "../hooks/useLanguageData";
 
 export const Navigation = () => {
+  const { language, changeLanguage } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("experience");
+  const { data: navigationData, loading } = useLanguageData("navigation");
 
-  const navItems = [
-    { id: "about", label: "Sobre mí" },
-    { id: "experience", label: "Experiencia" },
-    { id: "education", label: "Educación" },
-    { id: "certifications", label: "Certificaciones" },
-    { id: "skills", label: "Habilidades" },
-    { id: "projects", label: "Proyectos" },
-  ];
+  const navItems = navigationData
+    ? [
+        { id: "about", label: navigationData.about },
+        { id: "experience", label: navigationData.experience },
+        { id: "education", label: navigationData.education },
+        { id: "certifications", label: navigationData.certifications },
+        { id: "skills", label: navigationData.skills },
+        { id: "projects", label: navigationData.projects },
+      ]
+    : [];
 
-  const desktopNavItems = navItems.filter((item) => item.id !== "profile");
+  const desktopNavItems = navItems.filter((item) => item.id !== "about");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,7 +50,15 @@ export const Navigation = () => {
     handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [navItems]);
+
+  if (loading || !navigationData) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        Loading...
+      </div>
+    );
+  }
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -53,10 +67,6 @@ export const Navigation = () => {
       setActiveSection(sectionId);
     }
     setIsOpen(false);
-  };
-
-  const changeLanguage = (lang) => {
-    console.log(lang);
   };
 
   return (

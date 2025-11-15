@@ -1,7 +1,18 @@
 import { motion } from "framer-motion";
 import profileImage from "../../assets/images/profile-image.jpg";
+import { useLanguageData } from "../hooks/useLanguageData";
 
 export const Sidebar = () => {
+  const { data: aboutData, loading } = useLanguageData("aboutMeInfo");
+
+  if (loading || !aboutData) {
+    return (
+      <div className="flex flex-col justify-center items-center w-full lg:w-1/3 min-h-screen lg:h-screen lg:fixed left-0 top-0 z-10 p-4 lg:p-8">
+        <div className="text-white">Loading...</div>
+      </div>
+    );
+  }
+
   return (
     <div
       id="about"
@@ -15,7 +26,7 @@ export const Sidebar = () => {
       >
         <img
           src={profileImage}
-          alt="Foto de perfil"
+          alt={aboutData.imageAlt}
           className="w-full h-full object-cover"
         />
       </motion.div>
@@ -27,13 +38,11 @@ export const Sidebar = () => {
         transition={{ delay: 0.3, duration: 0.6 }}
       >
         <h2 className="text-xl lg:text-2xl font-bold mb-2 text-white">
-          Jorge Guedes Peña
+          {aboutData.name}
         </h2>
-        <p className="text-sm lg:text-base text-gray-400">
-          Desarrollador Frontend
-        </p>
+        <p className="text-sm lg:text-base text-gray-400">{aboutData.title}</p>
         <p className="text-xs lg:text-sm mt-2 text-gray-500">
-          React · JavaScript · Tailwind
+          {aboutData.skills}
         </p>
       </motion.div>
     </div>

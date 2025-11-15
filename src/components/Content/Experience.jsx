@@ -1,7 +1,17 @@
 import { motion } from "framer-motion";
-import experienceES from "../../data/es/experience.json";
+import { useLanguageData } from "../hooks/useLanguageData";
 
 export const Experience = () => {
+  const { data: experienceData, loading } = useLanguageData("experience");
+
+  if (loading || !experienceData) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        Loading...
+      </div>
+    );
+  }
+
   return (
     <div
       id="experience"
@@ -15,10 +25,10 @@ export const Experience = () => {
         transition={{ duration: 0.8, type: "spring" }}
       >
         <h2 className="text-2xl lg:text-3xl font-bold text-white text-center mb-8">
-          {experienceES.title}
+          {experienceData.title}
         </h2>
 
-        {experienceES.data.map((job) => (
+        {experienceData.data.map((job) => (
           <div key={job.id} className="mb-8">
             <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start mb-4">
               <div className="flex items-center gap-3">

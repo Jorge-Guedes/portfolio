@@ -1,7 +1,17 @@
 import { motion } from "framer-motion";
-import educationES from "../../data/es/education.json";
+import { useLanguageData } from "../hooks/useLanguageData";
 
 export const Education = () => {
+  const { data: educationData, loading } = useLanguageData("education");
+
+  if (loading || !educationData) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        Loading...
+      </div>
+    );
+  }
+
   return (
     <div
       id="education"
@@ -15,11 +25,11 @@ export const Education = () => {
         transition={{ duration: 0.8, type: "spring" }}
       >
         <h2 className="text-2xl lg:text-3xl font-bold text-white text-center mb-8">
-          {educationES.title}
+          {educationData.title}
         </h2>
 
         <div className="space-y-6">
-          {educationES.data.map((educ, index) => (
+          {educationData.data.map((educ, index) => (
             <motion.a
               key={educ.id}
               href={educ.site}

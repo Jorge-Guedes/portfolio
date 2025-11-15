@@ -1,9 +1,18 @@
 import Atropos from "atropos/react";
 import { motion } from "framer-motion";
-import projectsES from "../../data/es/projects.json";
+import { useLanguageData } from "../hooks/useLanguageData";
 import "atropos/css";
 
 export const Projects = () => {
+  const { data: projectsData, loading } = useLanguageData("projects");
+
+  if (loading || !projectsData) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        Loading...
+      </div>
+    );
+  }
   return (
     <div
       id="projects"
@@ -18,11 +27,11 @@ export const Projects = () => {
       >
         <div className="w-full max-w-6xl p-6 lg:p-8">
           <h2 className="text-2xl lg:text-3xl font-bold text-white text-center mb-8">
-            {projectsES.title}
+            {projectsData.title}
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-fr">
-            {projectsES.data.map((project) => (
+            {projectsData.data.map((project) => (
               <a
                 key={project.id}
                 href={project.github}
@@ -60,7 +69,7 @@ export const Projects = () => {
 
                       <div className="mb-4 flex-1">
                         <h4 className="text-green-400 font-semibold text-sm mb-1">
-                          {projectsES.labels.description}
+                          {projectsData.labels.description}
                         </h4>
                         <p className="text-gray-300 text-sm">
                           {project.description}
@@ -69,7 +78,7 @@ export const Projects = () => {
 
                       <div className="mb-4 flex-1">
                         <h4 className="text-green-400 font-semibold text-sm mb-1">
-                          {projectsES.labels.objective}
+                          {projectsData.labels.objective}
                         </h4>
                         <p className="text-gray-300 text-sm">
                           {project.objetive}
@@ -79,7 +88,7 @@ export const Projects = () => {
                       {project.technologies && (
                         <div className="mb-4 flex-1">
                           <h4 className="text-green-400 font-semibold text-sm mb-2">
-                            {projectsES.labels.technologies}
+                            {projectsData.labels.technologies}
                           </h4>
                           <div className="flex flex-wrap gap-1.5">
                             {project.technologies.map((tech, index) => (
@@ -97,7 +106,7 @@ export const Projects = () => {
 
                     <div className="mt-auto pt-4 border-t border-gray-600/40">
                       <div className="flex items-center justify-center text-gray-300 gap-2 text-xs font-medium">
-                        <span>{projectsES.labels.wiew_on_github_text}</span>
+                        <span>{projectsData.labels.wiew_on_github_text}</span>
                         <svg
                           className="w-4 h-4"
                           fill="currentColor"
