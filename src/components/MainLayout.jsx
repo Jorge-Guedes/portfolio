@@ -16,7 +16,6 @@ export const MainLayout = () => {
       }}
     >
       <Navigation />
-
       <div className="flex flex-col lg:flex-row min-h-screen w-full mx-auto">
         <Sidebar />
         <Content />

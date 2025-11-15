@@ -2,5 +2,9 @@
   "name": "Jorge Guedes Peña",
   "title": "Frontend Developer",
   "skills": "React · JavaScript · Tailwind",
-  "imageAlt": "Profile picture"
+  "imageAlt": "Profile picture",
+  "links": {
+    "github": "https://github.com/Jorge-Guedes",
+    "linkedin": "https://www.linkedin.com/in/jorge-guedes/"
+  }
 }
