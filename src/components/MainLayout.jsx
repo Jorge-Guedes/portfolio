@@ -5,7 +5,7 @@ import { Navigation } from "./Navigation/Navigation";
 export const MainLayout = () => {
   return (
     <div
-      className="min-h-screen w-full bg-pink-300"
+      className="min-h-screen w-full overflow-x-hidden"
       style={{
         background: `
           linear-gradient(135deg, #374151 0%, #111827 50%, #1f2937 100%),

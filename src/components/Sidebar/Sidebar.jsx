@@ -3,7 +3,10 @@ import profileImage from "../../assets/images/profile-image.jpg";
 
 export const Sidebar = () => {
   return (
-    <div className="flex flex-col justify-center items-center w-full lg:w-1/3 min-h-screen lg:h-screen lg:fixed left-0 top-0 z-10 p-4 lg:p-8">
+    <div
+      id="about"
+      className="flex flex-col justify-center items-center w-full lg:w-1/3 min-h-screen lg:h-screen lg:fixed left-0 top-0 z-10 p-4 lg:p-8"
+    >
       <motion.div
         className="w-48 h-48 lg:w-56 lg:h-56 rounded-full shadow-xl border border-gray-600 overflow-hidden"
         initial={{ opacity: 0, y: -50 }}

@@ -6,12 +6,15 @@ export const Navigation = () => {
   const [activeSection, setActiveSection] = useState("experience");
 
   const navItems = [
+    { id: "about", label: "Sobre mí" },
     { id: "experience", label: "Experiencia" },
     { id: "education", label: "Educación" },
     { id: "certifications", label: "Certificaciones" },
     { id: "skills", label: "Habilidades" },
     { id: "projects", label: "Proyectos" },
   ];
+
+  const desktopNavItems = navItems.filter((item) => item.id !== "profile");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -113,7 +116,7 @@ export const Navigation = () => {
       >
         <div className="bg-gray-800/40 backdrop-blur-sm rounded-2xl border border-gray-600/40 p-4">
           <ul className="flex space-x-6">
-            {navItems.map((item) => (
+            {desktopNavItems.map((item) => (
               <li key={item.id}>
                 <button
                   onClick={() => scrollToSection(item.id)}
