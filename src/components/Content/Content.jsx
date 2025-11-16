@@ -3,6 +3,7 @@ import { Education } from "./Education";
 import { Certifications } from "./Certifications";
 import { Skills } from "./Skills";
 import { Projects } from "./Projects";
+import { Contact } from "./Contact";
 
 export const Content = () => {
   return (
@@ -12,6 +13,7 @@ export const Content = () => {
       <Certifications />
       <Skills />
       <Projects />
+      <Contact />
     </div>
   );
 };

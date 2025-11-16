@@ -17,6 +17,7 @@ export const Navigation = () => {
         { id: "certifications", label: navigationData.certifications },
         { id: "skills", label: navigationData.skills },
         { id: "projects", label: navigationData.projects },
+        { id: "contact", label: navigationData.contact },
       ]
     : [];
 

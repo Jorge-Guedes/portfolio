@@ -1,0 +1,16 @@
+{
+  "title": "Contacto",
+  "fields": {
+    "name": "Nombre",
+    "email": "Email",
+    "message": "Mensaje"
+  },
+  "placeholders": {
+    "name": "Nombre",
+    "email": "Email",
+    "message": "Mensaje"
+  },
+  "submit": "Enviar Mensaje",
+  "submitting": "Enviando...",
+  "successMessage": "¡Gracias! Tu mensaje ha sido enviado. Te responderé pronto."
+}

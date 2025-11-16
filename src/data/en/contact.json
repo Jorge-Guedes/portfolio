@@ -1,0 +1,16 @@
+{
+  "title": "Contact",
+  "fields": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Message"
+  },
+  "placeholders": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Message"
+  },
+  "submit": "Send Message",
+  "submitting": "Sending...",
+  "successMessage": "Thank you! Your message has been sent. I'll get back to you soon."
+}
