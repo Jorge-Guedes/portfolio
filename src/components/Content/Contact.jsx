@@ -64,7 +64,7 @@ export const Contact = () => {
           <form
             name="contact"
             method="POST"
-            netlify
+            data-netlify="true"
             onSubmit={handleSubmit}
             className="bg-gray-800/40 backdrop-blur-sm rounded-2xl border border-gray-600/40 p-6 lg:p-8 space-y-6"
           >
