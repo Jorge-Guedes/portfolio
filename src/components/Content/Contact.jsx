@@ -59,7 +59,7 @@ export const Contact = () => {
         <motion.form
           name="contact"
           method="POST"
-          data-netlify="true"
+          netlify
           onSubmit={handleSubmit}
           className="bg-gray-800/40 backdrop-blur-sm rounded-2xl border border-gray-600/40 p-6 lg:p-8 space-y-6"
           initial={{ opacity: 0 }}
