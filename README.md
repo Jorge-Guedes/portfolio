@@ -11,4 +11,4 @@ Junior Frontend Developer specialized in React, Vue, JavaScript, TypeScript and 
 
 ## 🌐 Live Demo
 
-[View live portfolio]([https://tu-url.netlify.app](https://jorge-guedes-portfolio.netlify.app/))
+[View live portfolio](https://jorge-guedes-portfolio.netlify.app/)
